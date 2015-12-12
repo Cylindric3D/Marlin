@@ -177,9 +177,9 @@
 //    #define  DEFAULT_Kd 440
 
 // MakerFarm Prusa i3 E3D v6 (M303 S200 C8)
-    #define  DEFAULT_Kp 30.64
-    #define  DEFAULT_Ki 2.58
-    #define  DEFAULT_Kd 91.11
+    #define  DEFAULT_Kp 16.66
+    #define  DEFAULT_Ki 1.16
+    #define  DEFAULT_Kd 59.71
 
 // MakerFarm Prusa i3 E3D Volcano (M303 S200 C8)
 //    #define  DEFAULT_Kp 27.47
@@ -222,9 +222,9 @@
 //    #define  DEFAULT_bedKd 1675.16
 
 // MakerFarm Prusa i3 (M303 E-1 S60 C8)
-    #define  DEFAULT_bedKp 746.51
-    #define  DEFAULT_bedKi 138.06
-    #define  DEFAULT_bedKd 1009.10
+    #define  DEFAULT_bedKp 716.89
+    #define  DEFAULT_bedKi 136.73
+    #define  DEFAULT_bedKd 939.66
 
 
 // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
