@@ -577,13 +577,13 @@
     #define Z2_DIR_PIN         34
     #define Z2_ENABLE_PIN      30
 
-    #define E1_STEP_PIN        26
-    #define E1_DIR_PIN         28
-    #define E1_ENABLE_PIN      24
+    #define E0_STEP_PIN        26
+    #define E0_DIR_PIN         28
+    #define E0_ENABLE_PIN      24
 
-    #define E0_STEP_PIN        36
-    #define E0_DIR_PIN         34
-    #define E0_ENABLE_PIN      30
+    #define E1_STEP_PIN        36
+    #define E1_DIR_PIN         34
+    #define E1_ENABLE_PIN      30
 
     #define SDPOWER            -1
     #define SDSS               25//53
@@ -655,8 +655,10 @@
     #define LED_PIN            13
   #endif
 
-  #if MB(RAMPS_13_EFB) || MB(RAMPS_13_EFF) || MB(AZTEEG_X3) || MB(AZTEEG_X3_PRO)
+  #if MB(RAMPS_13_EFB) || MB(RAMPS_13_EFF) || MB(AZTEEG_X3)
     #define FAN_PIN            9 // (Sprinter config)
+  #elif MB(AZTEEG_X3_PRO)
+    #define FAN_PIN            11 // Last Heater Pin on board
   #else
     #define FAN_PIN            4 // IO pin. Buffer needed
   #endif
