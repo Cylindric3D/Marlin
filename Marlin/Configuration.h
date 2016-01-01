@@ -508,7 +508,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
   // X and Y offsets must be integers.
   #define X_PROBE_OFFSET_FROM_EXTRUDER 54     // Z probe to nozzle X offset: -left  +right
   #define Y_PROBE_OFFSET_FROM_EXTRUDER -14     // Z probe to nozzle Y offset: -front +behind
-  #define Z_PROBE_OFFSET_FROM_EXTRUDER -0.8  // Z probe to nozzle Z offset: -below (always!)
+  #define Z_PROBE_OFFSET_FROM_EXTRUDER -0.1  // Z probe to nozzle Z offset: -below (always!)
   // -1.4 was too low by 0.6
   // -2.0 was too low by LOADS
   
@@ -607,7 +607,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   {80,80,4000,500}  // default steps per unit for Ultimaker
 #define DEFAULT_AXIS_STEPS_PER_UNIT   {80, 80, 4000, 841}  // default steps per unit for Makerfarm
-#define DEFAULT_MAX_FEEDRATE          {300, 300, 2.6, 25}    // (mm/sec)
+#define DEFAULT_MAX_FEEDRATE          {120, 120, 2.6, 25}    // (mm/sec)
 #define DEFAULT_MAX_ACCELERATION      {3000, 3000, 100, 10000}    // X, Y, Z, E maximum start speed for accelerated moves. E default values are good for Skeinforge 40+, for older versions raise them a lot.
 
 #define DEFAULT_ACCELERATION          3000    // X, Y, Z and E acceleration in mm/s^2 for printing moves
@@ -644,7 +644,7 @@ const bool Z_MIN_PROBE_ENDSTOP_INVERTING = false; // set to true to invert the l
 // M501 - reads parameters from EEPROM (if you need reset them after you changed them temporarily).
 // M502 - reverts to the default "factory settings".  You still need to store them in EEPROM afterwards if you want to.
 //define this to enable EEPROM support
-//#define EEPROM_SETTINGS
+#define EEPROM_SETTINGS
 
 #if ENABLED(EEPROM_SETTINGS)
   // To disable EEPROM Serial responses and decrease program space by ~1700 byte: comment this out:
